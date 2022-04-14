@@ -1,0 +1,451 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer";
+    column-gap: 10px;
+}
+.header{
+    grid-area: ;
+}
+.main{
+    grid-area: ;
+}
+.footer{
+    grid-area: ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+.logoshark{
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+.logoshark:hover{
+    height: 75%;
+    width: 75%;
+    transition: 0.8s;
+}
+.logoshark:active{
+    height: 95%;
+    width: 95%;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color:darkcyan;
+}
+.navegador__lista{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    list-style: none;
+    font-weight: 600;
+    margin-right: 40px;
+}
+.letras-lista{
+    color: white;
+    text-decoration: none;
+}
+.letras-lista:hover{
+    font-size: 105%;
+    transition: 0.6s;
+}
+.letras-lista:active{
+    font-size: 90%;
+}
+.navegador__lista:hover a{
+    color: black;
+}
+
+header{
+    position:absolute;
+    background-color: lightskyblue;
+    width: 100%;
+    height: 105px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    
+}
+.bienvenidos__fondo{
+    position:relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(0%) translateY(-5%);
+}
+.bienvenidos__filtro{
+    filter: blur(5px);
+    background-color: 255, 255, 255, 0.2;
+    z-index: -1;
+}
+.bienvenidos-letras{
+    transform: translateX(75%) translateY(-550%);
+    display: inline-block;
+    text-align: center;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+.introduccion-letras{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom:50px ;
+    transform: translateX(0%) translateY(-180%);
+}
+.boton-contacto{
+    display: inline-block;
+    transform: translateX(265%) translateY(-550%);
+    text-align: center;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: aquamarine;
+}
+.boton-contacto:hover{
+    background-color: rgba(127, 255, 212, 0.568);
+    transition: 0.6s;
+}
+.boton-contacto:active{
+    background-color: rgba(127, 255, 212, 0.329);
+}
+.contactos{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+.seguinos{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 400px;
+}
+footer{
+    background-color:rgb(149, 166, 184);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-link{
+    color:rgb(0, 0, 102);
+}
+.servicios-que-incluyen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-servicios{
+    font-family:Arial, Helvetica, sans-serif;
+    color:darkcyan;
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.subtitulo-queincluyen{
+    font-family:Arial, Helvetica, sans-serif;
+    color:darkcyan;
+    font-size: xx-large;
+}
+.container-beneficios{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.container-beneficios__rutina{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px 10px;
+    margin-bottom: 400px;
+    border: 4px solid black;
+    background-color: white;
+}
+.container-beneficios__dieta{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;  
+    padding: 50px 10px;
+    margin-bottom: 400px;
+    border: 4px solid black;
+    background-color: white;
+}
+.container-beneficios__atencion{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px 10px;
+    margin-bottom: 400px;
+    border: 4px solid black;
+    background-color: white;}
+.fondo-sobrenosotros{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.quienesomos-titulo{
+    display: inline-block;
+    text-align: center;
+    z-index: 0;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 500px;
+    color: rgb(255, 255, 255);
+    font-size: 600px;
+}
+.quienesomos-descripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin: 20px 20px 40px 20px;
+}
+.asesorias-titulos{
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+}
+.tituloasesorias{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+    padding-top: 100px;    
+}
+.subtitulo-cuales{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+    font-size: xx-large;
+    padding:0;
+    margin:0;
+}
+.conteiner-planes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    gap: 20px;
+    padding: 50px 10px;
+}
+.planes-titulo{
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+.plan-eco{
+    padding: 50px 20px;
+    border: 4px solid black;
+    font-size: large;
+    margin-bottom:90px ;
+}
+.plan-nov{
+    padding: 40px 20px;
+    border: 4px solid black;
+    font-size: large;
+    margin-bottom:90px ;
+}
+.plan-pro{
+    padding: 30px 20px;
+    border: 4px solid black;
+    font-size: large;
+    margin-bottom:90px ;
+}
+.formulario-datos{
+    display: flex;
+    width: 900px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 70px 0px 300px 100px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border: 3px solid gray;
+    color: rgb(43, 43, 43);
+    transform: translate(20px, 170px);
+}
+.tus-datos{
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(43, 43, 43);
+    margin: 10px;
+    padding: 0;
+}
+.botones-formulario{
+    margin-top: 20px;
+}
+/*.menu-icon{
+    background-color:lightskyblue;
+}
+.menu-icon, #check {
+    display: none;
+}*/
+@media (max-width: 768px){
+    .conteiner-planes{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px 20px 0 20px;
+        text-align: center;
+    }
+    .navegador__lista{
+        font-size: 26px;
+    }
+    .header{
+        height: 140px;
+    }
+    .navegador__lista{
+        padding-bottom: 8px;
+    }
+    .tituloasesorias{
+        margin-top: 65px;
+        font-size: 60px;
+    }
+    .subtitulo-cuales{
+        font-size: 45px;
+    }
+    .planes-titulo{
+        font-size: 20px;
+        border: 2px black solid;
+    }
+    .plan-eco-letras{
+        font-size: 20px;
+        font-weight: 550;
+        padding-bottom: 9px;
+        list-style: none;
+    }
+    .plan-nov-letras{
+        font-size: 20px;
+        font-weight: 550;
+        padding-bottom: 8px;
+        list-style: none;
+    }
+    .plan-pro-letras{
+        font-size: 20px;
+        font-weight: 550;
+        padding-bottom: 10px;
+        list-style: none;
+    }
+    p{
+        font-size: 17px;
+    }
+    .contactos{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .titulo-servicios{
+        margin-top: 70px;
+    }
+    .container-beneficios{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 5px 0px 5px;
+    }
+    .container-beneficios__atencion{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container-beneficios__dieta{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container-beneficios__rutina{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px){
+    .conteiner-planes{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px 20px 0 20px;}
+    .navegador__lista{
+        font-size: 19px;
+    }
+    .header{
+        height: 140px;
+    }
+    .navegador__lista{
+        padding-bottom: 4px;
+    }
+    .tituloasesorias{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .subtitulo-cuales{
+        font-size: 30px;
+    }
+    .planes-titulo{
+        font-size: 20px;
+        border: 2px black solid;
+    }
+    .plan-eco-letras{
+        font-size: 15px;
+        font-weight: 550;
+        margin-bottom: 11px;
+        list-style: none;
+    }
+    .plan-nov-letras{
+        font-size: 15px;
+        font-weight: 550;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    .plan-pro-letras{
+        font-size: 15px;
+        font-weight: 550;
+        margin-bottom: 2px;
+        list-style: none;
+    }
+    p{
+        font-size: 20px;
+    }
+    .contactos{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .titulo-servicios{
+        margin-top: 70px;
+    }
+    .container-beneficios{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 5px 0px 5px;
+    }
+    .container-beneficios__atencion{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container-beneficios__dieta{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container-beneficios__rutina{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Training</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" href="../imagenes/icono.png">
+</head>
+<body>
+    <header>
+        <div class="logo1">
+            <a href="../index.html"> <img src="../imagenes/logoshark.png" alt="LOGOSHARK" class="logoshark"></a>
+        </div>
+        <nav>
+            <ul class="navegador">
+                <li class="navegador__lista">
+                    <a href="../index.html" class="letras-lista">Inicio</a>
+                </li>
+                <li class="navegador__lista">
+                    <a href="/paginas/servicios.html" class="letras-lista">Servicios</a></li>
+                <li class="navegador__lista">
+                    <a href="/paginas/sobrenosotros.html" class="letras-lista">Sobre Nosotros</a>
+                </li>
+                <li class="navegador__lista">
+                    <a href="/paginas/asesorias.html" class="letras-lista">Asesorías</a>
+                </li>
+                <li class="navegador__lista">
+                    <a href="/paginas/contacto.html" class="letras-lista">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded" class="formulario-datos">
+            <legend class="tus-datos">Tus Datos</legend>
+            <div class="formulario-nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="formulario-email">
+                <label for="email">Ingresa tu Correo:</label>
+                <input type="email" name="email" id="email" placeholder="Correo" required>
+            </div>
+            <div class="formulario-objetivo">
+                <label for="objetivo">Cual es tu objetivo:</label>
+                <select name="objetivo" id="">
+                    <option value="inicio" hidden>Seleccione una opción</option>
+                    <option value="aumento-de-peso">Aumento de Peso</option>
+                    <option value="perdida-de-peso">Pérdida de Peso</option>
+                    <option value="mantenimiento">Mantenerse en Forma</option>
+                </select>
+            </div>
+            <div class="formulario-plan">
+                <label for="plan">Que plan Elegiste:</label>
+                <select name="plan" id="">
+                    <option value="inicio" hidden>Seleccione una opción</option>
+                    <option value="plan-eco">Plan Económico</option>
+                    <option value="plan-nov">Plan Novato</option>
+                    <option value="plan-pro">Plan Pro</option>
+                </select>
+            </div>
+            <div class="genero">
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="femenino" value="Femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+            <div>
+                <h3 class="tus-datos">Características</h3>
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad" placeholder="Edad" required>
+                <label for="altura">Altura</label>
+                <input type="text" name="altura" id="altura" placeholder="Altura (metros)" required>
+                <label for="peso">Peso</label>
+                <input type="text" name="peso" id="peso" placeholder="Peso (kg)" required>
+            </div>
+            <div>
+                <input class="botones-formulario" type="submit" value="Enviar">
+                <input class="botones-formulario" type="reset" value="Borrar">
+            </div>      
+        </form>
+        <div>
+            <p class="seguinos">Seguinos en Redes:</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="/imagenes/instalogo.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="/imagenes/youtubelogo.png" alt="YouTube">
+            </a>
+        </div>
+    </main>
+    <br><br><br>
+    <footer>
+        </div>
+        <div class="contactos">
+            <p>email:<a href="mailto:email" class="footer-link">asesorias.shark@gmail.com</a></p>
+            <p>Todos los Derechos Reservados</p>
+            <p>Teléfono:<a href="tel:+5412341234" class="footer-link">11-1234-1234</a></p>
+        </div>
+    </footer>
+</body>
+</html>
